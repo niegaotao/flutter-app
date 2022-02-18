@@ -1,2 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Flutter/Flutter-xcframeworks.sh
-${PODS_ROOT}/../../../flutter_module/.iOS/Flutter/engine/Flutter.xcframework
+${PODS_ROOT}/../../module/.iOS/Flutter/engine/Flutter.xcframework

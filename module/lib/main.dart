@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(const App());
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
@@ -19,18 +18,17 @@ class MyApp extends StatelessWidget {
         // application has a blue toolbar. Then, without quitting the app, try
         // changing the primarySwatch below to Colors.green and then invoke
         // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
+        // or press Run > Flutter Hot Reload in a Flutter IDE). Notice that the
+        // counter didn't reset back to zero; the application is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const Desktop(title: 'flutter-app'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+class Desktop extends StatefulWidget {
+  const Desktop({Key? key, required this.title}) : super(key: key);
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -44,11 +42,16 @@ class MyHomePage extends StatefulWidget {
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<Desktop> createState() => _DesktopState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _DesktopState extends State<Desktop> {
   int _counter = 0;
+
+  MethodChannel channel = MethodChannel("App");
+  String message = "Null";
+  Color backgroundColor = Color.fromRGBO(255, 255, 255, 1);
+  Color foregroundColor = Color.fromRGBO(0,0,0,1);
 
   void _incrementCounter() {
     setState(() {
@@ -59,6 +62,33 @@ class _MyHomePageState extends State<MyHomePage> {
       // called again, and so nothing would appear to happen.
       _counter++;
     });
+  }
+
+  @override
+  void initState() {
+    channel.setMethodCallHandler((call){
+      print("Flutter收到消息:method=${call.method},arguments=${call.arguments}");
+      message = call.method;
+
+      if(call.method == "updateAppearance"){
+        if (call.arguments is Map) {
+          print("isMap");
+          List _bs = call.arguments['backgroundColor'];
+          List _fs = call.arguments['foregroundColor'];
+          backgroundColor = Color.fromRGBO(_bs[0], _bs[1], _bs[2], 1);
+          foregroundColor = Color.fromRGBO(_fs[0], _fs[1], _fs[2], 1);
+          print("_bs=${_bs};_fs=${_fs};_b=${backgroundColor};_f=${foregroundColor}");
+        }
+      }
+
+      setState(() {
+      });
+
+      channel.invokeMethod("${call.method}-reply");
+
+      return Future((){});
+    });
+    super.initState();
   }
 
   @override
@@ -75,9 +105,9 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
+      body: Container(
+
+        color: backgroundColor,
         child: Column(
           // Column is also a layout widget. It takes a list of children and
           // arranges them vertically. By default, it sizes itself to fit its
@@ -94,13 +124,15 @@ class _MyHomePageState extends State<MyHomePage> {
           // axis because Columns are vertical (the cross axis would be
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+            Text(message, style: TextStyle(color: foregroundColor, fontSize: 30)),
+            Text('Presed times:$_counter', style: TextStyle(color: foregroundColor, fontSize: 17)),
+            GestureDetector(
+              onTapUp: (detail){
+                channel.invokeMethod("exit");
+              },
+              child: Text("退出", style: TextStyle(color: foregroundColor, fontSize: 17),),
             ),
           ],
         ),
