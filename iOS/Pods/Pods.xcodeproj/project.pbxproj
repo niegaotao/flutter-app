@@ -1,0 +1,1507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		13EA303BE4CA00A2ACBB221B4CC6120D /* flutter_module */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B2B9BDCCE32AA674DD5C92CAAAAF2BBA /* Build configuration list for PBXAggregateTarget "flutter_module" */;
+			buildPhases = (
+			);
+			dependencies = (
+				F32A55668AB1AC49EE86D1EA62EC1C5E /* PBXTargetDependency */,
+			);
+			name = flutter_module;
+		};
+		1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6164B05B5EAB7A16188BE69BCC9EBC7E /* Build configuration list for PBXAggregateTarget "Flutter" */;
+			buildPhases = (
+				1942DC242E5E1329454EB610A4490AAB /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = Flutter;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00972983F813E9AC8D75B45E656F6E06 /* NXAutoresizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04ED1492737385F6DF9C0E15F8D0C0A /* NXAutoresizeView.swift */; };
+		00CF5BE69D2B6E1BF3B879762020978F /* NXKeyboardAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972C27E982EBA280F2ACE83CE9BF4EB0 /* NXKeyboardAccessoryView.swift */; };
+		017C552FD0EAE110E1E769425D6F2F5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		03BC3491994A2EA3150FF3A5B82BCA6A /* NXImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A981B9D3E89A33CBE02EB79B08A17 /* NXImageView.swift */; };
+		094AC5CBFD75801B91331E74E8C42D40 /* NXLCRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D826AD67ABF8A0D0CF522B71B63CFB /* NXLCRView.swift */; };
+		095530C1F482C3CB8297614170F62671 /* NXOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050750FE7BDDA76B07B8669445D5A117 /* NXOverlay.swift */; };
+		0E2D2A9E4A4651DBE6F6B766DC960552 /* NXKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2A6EF79933FC14944EDABD42DB05BF /* NXKit-dummy.m */; };
+		12588AF0AB85B7BDEDA05704E24B7780 /* NXTableWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459540AED62B0179D7D89E8F323F394 /* NXTableWrapper.swift */; };
+		14C1316A0AC8C12363A4FCBA5867BFB4 /* NXApplicationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76A7DF9FA21095596499DC832E73BA1 /* NXApplicationViewCell.swift */; };
+		169161123FD4AE6DE87E99D179FFC0B2 /* NXString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC63FA543F182B63C96FCCD886BFAD3F /* NXString.swift */; };
+		177813706C9F2025F9A004EF441F7E68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		187FD1ECED176B7EE8FBD6A4DA090E91 /* NXWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B80C5CFF018802BC4A2AC7294782F66 /* NXWebView.swift */; };
+		1CE393605A5A855D0419053F861CCAF2 /* NXNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4897BF141D9F39F1969B0B84487D5 /* NXNavigationController.swift */; };
+		20D0442CE6955D429A595225893E1015 /* NXAssetClipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D231E4EBA1AC620795FDB60830022E9F /* NXAssetClipViewController.swift */; };
+		229F582D22C6D6AE0015ED83F8815E5B /* NXSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10767FA338C1BE5C7F7819C43E973A6 /* NXSerialization.swift */; };
+		232D04722C1E12240359213F1EB70AE6 /* NXAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806B27124CDA21FD8EBCC4A981865FE /* NXAction.swift */; };
+		2881FC7EA3D0547801F25C1E20D65DE1 /* NXTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05E8B444500212F5F8DD24B64FCB61D /* NXTableView.swift */; };
+		2D06101B65265BD6508261A8A49BA852 /* UIView+NXKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C579998E4B54D8A1D5E55579662E39A /* UIView+NXKit.swift */; };
+		3042F0085ED19DD96504646E3057CED1 /* NXContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05541C5D58CDF1E034A9E8C92E382468 /* NXContainerController.swift */; };
+		33688F8F310DB34ECFAFEC9BE456D5DE /* NX+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A23ECA9CFD6B890BB5FBE0E3CDBEBED /* NX+.swift */; };
+		36E6A32755C1E8F7F75234EF26D2E25E /* NXCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E787C313EAB1BB8ADAC19973C5839A /* NXCView.swift */; };
+		389D2E1106CF41702FB5EF27F4A9EC5D /* NXTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6338C4EB7F5D54FC4965D76DC283286C /* NXTransitionView.swift */; };
+		3934D166F75A7D722A193F09A724689C /* NXBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684F78D94F40CF1197BC2E2060B9D7C /* NXBackgroundView.swift */; };
+		3BE680F40DC0D4F5FF76D91A81823500 /* NXView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC692944537772DB54FA56AC8014084 /* NXView.swift */; };
+		3D0FA8462DACE36174A0256714D1B3AB /* NXAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5A696E9D2D55D68FDCCF520D9F8756 /* NXAnimationView.swift */; };
+		3EB1D15AB4106AD658832C55B24A4C27 /* NXObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260414DB8CF952423BD85F1C43E6CF8 /* NXObserver.swift */; };
+		3EDE7B77EBF529C52163461D37129D48 /* NXKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 527C88E7CCC13ECE7C32DE5A4381535D /* NXKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40BE9B69ACBCF1CF52FE1B6946D708B4 /* NXToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F27FB8CEC3D186F7BF6F553CDA2C2B /* NXToolViewController.swift */; };
+		46197EAEF3CB14FDBAC29B14BD7207BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		464BDA3CA7CC2CAE1EFB3D8F1C51B20A /* NXTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5A02FD1BD2091C901B583389A8C879 /* NXTableViewController.swift */; };
+		533438362276AEDF4A05DE58364A0964 /* NXLRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD49FEAE7CE1CE7E0501B2B8BC9E805 /* NXLRView.swift */; };
+		539BA0239FCDB858B4F46DD95192F79D /* NXActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDFDB1F3C3A45F0DE945EBD3B6A9DF7 /* NXActionView.swift */; };
+		53E43C0D96B45C6F8BCABAB0088B075B /* NXClipboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DCB951BAA457E44E61F448055E844 /* NXClipboardView.swift */; };
+		5ED0D01BABFE05A89769043691855076 /* NXSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6F2EA56A34AC0ADDC5A765B3CDF3F /* NXSwipeView.swift */; };
+		5F2EFDEB03919C5305496AECB08A7613 /* NXKVOObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0C3A3A887680FE5A7D15BCCFFC19C7 /* NXKVOObserver.swift */; };
+		612B5FC0DC4F7F000B3A1433A60D9780 /* NXViewAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDEC130E7405A7E8670B5F8050464E7 /* NXViewAssociation.swift */; };
+		63D4D55C7779E05E5B4C360592822541 /* NXRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FDEE24FB20F2F58448F187CA60B790 /* NXRequest.swift */; };
+		6888DA4D7169948479EC1BB0567618FB /* NXSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84668BCAB9A94904202583DFF047C032 /* NXSwipeViewController.swift */; };
+		6A0EEDB2DE0558D0B1A8C8F5CDD77D7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		6A63029C0950C00CE30DCC101D95503F /* NXSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A73BC6DEF7EF4EA754ABE217F6FAB /* NXSwitch.swift */; };
+		725FD89A26E2EBBB79B81EAE0B64E698 /* UIButton+NXKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94404BC9C2B139B5D765D69E6EEB0F6 /* UIButton+NXKit.swift */; };
+		77BC3569E17A6B30DCB25089CBE4E5B1 /* NXButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DBB1E13731D4BF6D9E907620B75A82 /* NXButton.swift */; };
+		7A71326D4D51961E016B9B1B76B60DC2 /* NXCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5D7558CE7DFBE7798ED9D338EF4C76 /* NXCollectionReusableView.swift */; };
+		7C58124A6D5E18569509F492244B91F8 /* NXItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA002F75A8B25BA9F96532689922AC42 /* NXItem.swift */; };
+		7C7E023885BE6177E0D98A83BF2973EB /* NXTableReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EB7239015E9C5DA40FE8906B3EE87 /* NXTableReusableView.swift */; };
+		7F3F82F593F67F30C088E4D154977D25 /* NXRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8CFAB81C1996CD596B9F187F289359 /* NXRouter.swift */; };
+		80458E7FCA7ECDAAEF1A07059E2535A6 /* NXTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06451A87BC8BD8660B96E7CC43744A3 /* NXTextField.swift */; };
+		86DA52F44FDC314D77B3D50CA6E43F1A /* DispatchQueue+NXKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161DF05B7742E75D854EABFCCBE15262 /* DispatchQueue+NXKit.swift */; };
+		87B8B568CACFEEF133F4AB49CE825A9E /* NXCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E721FF195DA081C32A0D418F03445 /* NXCollectionViewCell.swift */; };
+		9A5C9AD0C7EF1A8B6BD62BA3C6097325 /* NXAny.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4444196E27E9F03017C0F0A1BA8974EE /* NXAny.swift */; };
+		9DBDF0E4E75EC5E2A0FA846D57785045 /* NXPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA251C942F297CC8C4173A34917C9F2A /* NXPlaceholderView.swift */; };
+		9F768C36256554365D76327D3A4B4309 /* NX.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02000730C2777EA1CDFF96DBE7FF01B /* NX.swift */; };
+		A15E0AEDD6CB7AD0D26CC3F0E53A7F67 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF08606EE61A45D810E1BFBF6124B3 /* GeneratedPluginRegistrant.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A335E7C4B8218E5883AF644B79EA610A /* NXCollectionWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D73168F5D774A5E8152554539AC7151 /* NXCollectionWrapper.swift */; };
+		AD36E01241ED66EA388BFB150592EADD /* NXAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A77E9C536C6FF315EFEADF3652A520A /* NXAsset.swift */; };
+		B0CE0DEC7E4DC4B69CCCA615593616B3 /* NXViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871CB6D3A65D24A670B2708514C9ABE9 /* NXViewControllerView.swift */; };
+		B139A6CF5147059A8E5C33B5D2ABEEDD /* GeneratedPluginRegistrant.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F1E8EC2321F1870CDC1F5D1F8AD4B7 /* GeneratedPluginRegistrant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5939257FF12EBD47EEC5C08B89F0EAB /* NXToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7520E9AD9DA43948153C271A14C5066B /* NXToolView.swift */; };
+		B748F30E0DBE2949DDBBD65DE2AB5E30 /* NXSuspendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547AD9B4DC98B2DEF6CD4049D247038F /* NXSuspendView.swift */; };
+		B7491C241A12E24CCE876E22A16367B7 /* NXNaviView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B503830022A72BF8234F13078E9221 /* NXNaviView.swift */; };
+		BF1E70A97C3E9C290DD68EF8285F278E /* NXResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B364B3F135578DC1F1590AD01627ADD /* NXResize.swift */; };
+		C086A6BD565BAF678CAC09848E0454AF /* NXAnylayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E75959AD858240973260681645B226 /* NXAnylayerView.swift */; };
+		C650F4D7EED03C224A170284DF0B134B /* NXLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9DCDD86918778B1192469FACF7F6C4 /* NXLabel.swift */; };
+		C7F3E9F42191FB1E5625FEED890F7107 /* NXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12334EBBB4D1339EC63C4373E5CDCE0A /* NXViewController.swift */; };
+		C9712B153086748203B5823408730A3E /* NXTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A674138DC94B33A8B6C1FC53A43B42 /* NXTableViewCell.swift */; };
+		CB0EED943E8281DBD7F7B2D0364F3ABF /* NX.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D690487A15201CB22E3E91701963D226 /* NX.bundle */; };
+		CC7F323576949FAFE6B02FFB6B5E28D6 /* NXArrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5021BC3E52CFB5274C5E708DB1523801 /* NXArrayView.swift */; };
+		CCB7463178B75467A9470FB780097352 /* NXShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134491F8252AEEBAF42969603E8C15E /* NXShadowView.swift */; };
+		D3855BBD2C315F4F56CADA1DC8B451D8 /* NXStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC2D618B276368722193B8B336B4691 /* NXStorage.swift */; };
+		D4C8D428F2FDB504373A10072458BA85 /* NXApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C4821DB44E56DFD98035F6BC750F98 /* NXApplicationView.swift */; };
+		D595CF4FF1DD25C3C9F27C6925C61F3F /* UILabel+NXKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A05E69112B97EF83E0772B78F5C22 /* UILabel+NXKit.swift */; };
+		D9C89B71DFEF410BF343793C944A5AD0 /* NXWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573B3A7D877C16612EB3091624C7FF8E /* NXWebViewController.swift */; };
+		DC136A1B32B71AEC374B76D89800434C /* NXTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1597D1928800CE74F8E6F968AD04789 /* NXTextView.swift */; };
+		DC9FDDAC90D205AEAF85C495DA9954D9 /* Pods-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D2818FC2F100F157AF569A8B77E4F7 /* Pods-iOS-dummy.m */; };
+		DD2BE0C1D2817B94E5CF1F21716B723D /* NXRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC558453E8061151EA528C33F3C1C526 /* NXRuntime.swift */; };
+		DEC73351C0B723803DD91D7EA350078B /* Pods-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 896FFF0F9923E02F9FD8539E3B6E597A /* Pods-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E04141CB9EC8739FDFAB72497A764E45 /* NXAssetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD53FE8234CDBFB233D010907A9BFFEB /* NXAssetsViewController.swift */; };
+		E072453A4A5170DE5635539A64F2F78D /* UIImage+NXKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA726EACAB1679022E4F6AC5AD983B8C /* UIImage+NXKit.swift */; };
+		E26FFECC7422D8CF49848E6A9B86FB64 /* NXUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A3ED93257C3FB6FC165F0B8BA1334B /* NXUI.swift */; };
+		E3750492C6D16BAE249FBF169BD905A7 /* NXHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC545DB3AAA7E5B5CC25C94A76F8CA5 /* NXHUD.swift */; };
+		E3D837330AA3A84258FE47D290F97FCC /* FlutterPluginRegistrant-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E40DF64CD08C0028DEFE019D9E6402E /* FlutterPluginRegistrant-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECA34B8BAE55614245952225403E62BD /* NXCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16941B380A312764A7F6DBDAE2FB57A /* NXCollectionViewController.swift */; };
+		EEEB61B1EF6CB43D93A55150E49DEFEC /* FlutterPluginRegistrant-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E98221176004E8B7BE72385B21DA13 /* FlutterPluginRegistrant-dummy.m */; };
+		EF6A01FF0CB9902BC698E025B034E6D2 /* NXViewControllerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A909E48D5BA156DFDAEDA76AF04433FC /* NXViewControllerAnimation.swift */; };
+		F4833DCC2F85C3423880AC9EA310317D /* String+NXKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DD94379365FDD5938308D1B2F870A8 /* String+NXKit.swift */; };
+		F67D2B0687AAE48F21836B5F163EDD70 /* NXCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3104EDCD05DC793EC7A054E9AC99085 /* NXCollectionView.swift */; };
+		F799BE8FAF0C33E50340D7D358A2D4B6 /* NXFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3831C893004F0D2EFFA888C66026107E /* NXFS.swift */; };
+		FC25A961A62181B395FB6A4045589293 /* NXControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29A60C3A7DD4F9F33CB7E11139354F6 /* NXControl.swift */; };
+		FC9005F1286B336D05428AA0F631DF89 /* NXKit-NXKit in Resources */ = {isa = PBXBuildFile; fileRef = E63DF99DCD4379F20D3F2B193AA61FC9 /* NXKit-NXKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CBCB651009EAB8D5051337551A56B01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
+			remoteInfo = Flutter;
+		};
+		2ACE97D46477017F5E5952D0FA01CFC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83DAA8F43D74F8D51203DE23C7C3A3F5;
+			remoteInfo = FlutterPluginRegistrant;
+		};
+		5105D8CFDDEC3D0626977C89FE9525E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
+			remoteInfo = Flutter;
+		};
+		7A1E95A94D88A422AA795E77D1E4799F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65356E389A75B118329D272175C636AA;
+			remoteInfo = NXKit;
+		};
+		B4D45CE70480480714076865867C4C86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E8176B9C15F8A61E959200B92017EE1;
+			remoteInfo = "NXKit-NXKit";
+		};
+		BF912F4DD9614928FF9DA035CFA9B2C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13EA303BE4CA00A2ACBB221B4CC6120D;
+			remoteInfo = flutter_module;
+		};
+		C3109B18B1E07D478E8103B8D35733A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
+			remoteInfo = Flutter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01E75959AD858240973260681645B226 /* NXAnylayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXAnylayerView.swift; path = NXKit/Classes/Foundation/NXAnylayerView.swift; sourceTree = "<group>"; };
+		026A73BC6DEF7EF4EA754ABE217F6FAB /* NXSwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXSwitch.swift; path = NXKit/Classes/Foundation/NXSwitch.swift; sourceTree = "<group>"; };
+		050750FE7BDDA76B07B8669445D5A117 /* NXOverlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXOverlay.swift; path = NXKit/Classes/Foundation/NXOverlay.swift; sourceTree = "<group>"; };
+		05541C5D58CDF1E034A9E8C92E382468 /* NXContainerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXContainerController.swift; path = NXKit/Classes/Foundation/NXContainerController.swift; sourceTree = "<group>"; };
+		06587075D69E1E65069950D0F63F755A /* Pods-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		07DBB1E13731D4BF6D9E907620B75A82 /* NXButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXButton.swift; path = NXKit/Classes/Foundation/NXButton.swift; sourceTree = "<group>"; };
+		09A204268F4535CB5A6B08C05324615D /* Pods-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0ABF08606EE61A45D810E1BFBF6124B3 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GeneratedPluginRegistrant.m; path = ../../../.ios/Flutter/FlutterPluginRegistrant/Classes/GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
+		0B364B3F135578DC1F1590AD01627ADD /* NXResize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXResize.swift; path = NXKit/Classes/Foundation/NXResize.swift; sourceTree = "<group>"; };
+		12334EBBB4D1339EC63C4373E5CDCE0A /* NXViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXViewController.swift; path = NXKit/Classes/Foundation/NXViewController.swift; sourceTree = "<group>"; };
+		161DF05B7742E75D854EABFCCBE15262 /* DispatchQueue+NXKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+NXKit.swift"; path = "NXKit/Classes/Foundation/DispatchQueue+NXKit.swift"; sourceTree = "<group>"; };
+		16BD169AA7D536D6860E10A04512C835 /* Pods-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOS-frameworks.sh"; sourceTree = "<group>"; };
+		179B703FDC155D582EA19CA4C60E3C0C /* Pods-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1B4A05E69112B97EF83E0772B78F5C22 /* UILabel+NXKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+NXKit.swift"; path = "NXKit/Classes/Foundation/UILabel+NXKit.swift"; sourceTree = "<group>"; };
+		1B6C54E1C99FE28B8BE84E5519D548CE /* NXKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NXKit.debug.xcconfig; sourceTree = "<group>"; };
+		1C5A696E9D2D55D68FDCCF520D9F8756 /* NXAnimationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXAnimationView.swift; path = NXKit/Classes/Foundation/NXAnimationView.swift; sourceTree = "<group>"; };
+		1CB4897BF141D9F39F1969B0B84487D5 /* NXNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXNavigationController.swift; path = NXKit/Classes/Foundation/NXNavigationController.swift; sourceTree = "<group>"; };
+		25862E9BE019FB283CE4CFF3412407F5 /* FlutterPluginRegistrant.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = FlutterPluginRegistrant.podspec; path = ../../../.ios/Flutter/FlutterPluginRegistrant/FlutterPluginRegistrant.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		262DCB951BAA457E44E61F448055E844 /* NXClipboardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXClipboardView.swift; path = NXKit/Classes/Extensions/NXClipboardView.swift; sourceTree = "<group>"; };
+		2B7BDF442D2F168184C9E8D437D5CD1C /* Flutter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.release.xcconfig; sourceTree = "<group>"; };
+		30D826AD67ABF8A0D0CF522B71B63CFB /* NXLCRView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXLCRView.swift; path = NXKit/Classes/Foundation/NXLCRView.swift; sourceTree = "<group>"; };
+		321E721FF195DA081C32A0D418F03445 /* NXCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXCollectionViewCell.swift; path = NXKit/Classes/Foundation/NXCollectionViewCell.swift; sourceTree = "<group>"; };
+		32CD67DD8FAB164FE33568C3A49B9DD4 /* Flutter-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Flutter-xcframeworks.sh"; sourceTree = "<group>"; };
+		34DD94379365FDD5938308D1B2F870A8 /* String+NXKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+NXKit.swift"; path = "NXKit/Classes/Foundation/String+NXKit.swift"; sourceTree = "<group>"; };
+		3831C893004F0D2EFFA888C66026107E /* NXFS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXFS.swift; path = NXKit/Classes/Foundation/NXFS.swift; sourceTree = "<group>"; };
+		39F56B0C17D4059F91A4884E0368ED5E /* flutter_module.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = flutter_module.debug.xcconfig; sourceTree = "<group>"; };
+		3A23ECA9CFD6B890BB5FBE0E3CDBEBED /* NX+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NX+.swift"; path = "NXKit/Classes/Foundation/NX+.swift"; sourceTree = "<group>"; };
+		3A77E9C536C6FF315EFEADF3652A520A /* NXAsset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXAsset.swift; path = NXKit/Classes/Extensions/NXAsset.swift; sourceTree = "<group>"; };
+		3C579998E4B54D8A1D5E55579662E39A /* UIView+NXKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+NXKit.swift"; path = "NXKit/Classes/Foundation/UIView+NXKit.swift"; sourceTree = "<group>"; };
+		3EDEC130E7405A7E8670B5F8050464E7 /* NXViewAssociation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXViewAssociation.swift; path = NXKit/Classes/Foundation/NXViewAssociation.swift; sourceTree = "<group>"; };
+		43945211223AFB7B7D483BBF72CCE354 /* Flutter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = Flutter.xcframework; path = ../../../.ios/Flutter/engine/Flutter.xcframework; sourceTree = "<group>"; };
+		4444196E27E9F03017C0F0A1BA8974EE /* NXAny.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXAny.swift; path = NXKit/Classes/Foundation/NXAny.swift; sourceTree = "<group>"; };
+		49A3ED93257C3FB6FC165F0B8BA1334B /* NXUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXUI.swift; path = NXKit/Classes/Foundation/NXUI.swift; sourceTree = "<group>"; };
+		4AC2D618B276368722193B8B336B4691 /* NXStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXStorage.swift; path = NXKit/Classes/Foundation/NXStorage.swift; sourceTree = "<group>"; };
+		4BC545DB3AAA7E5B5CC25C94A76F8CA5 /* NXHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXHUD.swift; path = NXKit/Classes/Foundation/NXHUD.swift; sourceTree = "<group>"; };
+		4C0C3A3A887680FE5A7D15BCCFFC19C7 /* NXKVOObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXKVOObserver.swift; path = NXKit/Classes/Foundation/NXKVOObserver.swift; sourceTree = "<group>"; };
+		4D9B1836266EF2C44E7B60CB592D40F4 /* Flutter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.debug.xcconfig; sourceTree = "<group>"; };
+		4E40DF64CD08C0028DEFE019D9E6402E /* FlutterPluginRegistrant-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlutterPluginRegistrant-umbrella.h"; sourceTree = "<group>"; };
+		5021BC3E52CFB5274C5E708DB1523801 /* NXArrayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXArrayView.swift; path = NXKit/Classes/Foundation/NXArrayView.swift; sourceTree = "<group>"; };
+		527C88E7CCC13ECE7C32DE5A4381535D /* NXKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NXKit-umbrella.h"; sourceTree = "<group>"; };
+		547AD9B4DC98B2DEF6CD4049D247038F /* NXSuspendView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXSuspendView.swift; path = NXKit/Classes/Foundation/NXSuspendView.swift; sourceTree = "<group>"; };
+		573B3A7D877C16612EB3091624C7FF8E /* NXWebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXWebViewController.swift; path = NXKit/Classes/Foundation/NXWebViewController.swift; sourceTree = "<group>"; };
+		58B503830022A72BF8234F13078E9221 /* NXNaviView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXNaviView.swift; path = NXKit/Classes/Foundation/NXNaviView.swift; sourceTree = "<group>"; };
+		5B61F92CC4F5C15B9CCB6D85B822D0D6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../../.ios/Flutter/README.md; sourceTree = "<group>"; };
+		5F69386CF41B131FB792226AAC642EE0 /* NXKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NXKit; path = NXKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60DE6442B43CFDF15B1C56F245341CDA /* NXKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NXKit-Info.plist"; sourceTree = "<group>"; };
+		62E98221176004E8B7BE72385B21DA13 /* FlutterPluginRegistrant-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlutterPluginRegistrant-dummy.m"; sourceTree = "<group>"; };
+		6338C4EB7F5D54FC4965D76DC283286C /* NXTransitionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXTransitionView.swift; path = NXKit/Classes/Foundation/NXTransitionView.swift; sourceTree = "<group>"; };
+		6479181DA75A75E398F4213770F5BD28 /* NXKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NXKit-prefix.pch"; sourceTree = "<group>"; };
+		6E7E4BFCC2BC6524F79FE55041265E77 /* NXKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = NXKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7520E9AD9DA43948153C271A14C5066B /* NXToolView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXToolView.swift; path = NXKit/Classes/Foundation/NXToolView.swift; sourceTree = "<group>"; };
+		76CB43418F1A555BEE006D1D0507FE9F /* App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = App.framework; path = ../../.ios/Flutter/App.framework; sourceTree = "<group>"; };
+		7B80C5CFF018802BC4A2AC7294782F66 /* NXWebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXWebView.swift; path = NXKit/Classes/Foundation/NXWebView.swift; sourceTree = "<group>"; };
+		7D73168F5D774A5E8152554539AC7151 /* NXCollectionWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXCollectionWrapper.swift; path = NXKit/Classes/Foundation/NXCollectionWrapper.swift; sourceTree = "<group>"; };
+		84668BCAB9A94904202583DFF047C032 /* NXSwipeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXSwipeViewController.swift; path = NXKit/Classes/Foundation/NXSwipeViewController.swift; sourceTree = "<group>"; };
+		8673383BA585862502680D846E78376E /* flutter_module.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = flutter_module.release.xcconfig; sourceTree = "<group>"; };
+		871CB6D3A65D24A670B2708514C9ABE9 /* NXViewControllerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXViewControllerView.swift; path = NXKit/Classes/Foundation/NXViewControllerView.swift; sourceTree = "<group>"; };
+		896FFF0F9923E02F9FD8539E3B6E597A /* Pods-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOS-umbrella.h"; sourceTree = "<group>"; };
+		8B5D7558CE7DFBE7798ED9D338EF4C76 /* NXCollectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXCollectionReusableView.swift; path = NXKit/Classes/Foundation/NXCollectionReusableView.swift; sourceTree = "<group>"; };
+		8CCC53ED50D447AB86709A017582D719 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8D9920E2220AC7143AD1F433EAFAD668 /* NXKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NXKit.release.xcconfig; sourceTree = "<group>"; };
+		8F6B35AAED3AEE578B518885A8BCF5D4 /* ResourceBundle-NXKit-NXKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-NXKit-NXKit-Info.plist"; sourceTree = "<group>"; };
+		96F1E8EC2321F1870CDC1F5D1F8AD4B7 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeneratedPluginRegistrant.h; path = ../../../.ios/Flutter/FlutterPluginRegistrant/Classes/GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
+		972C27E982EBA280F2ACE83CE9BF4EB0 /* NXKeyboardAccessoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXKeyboardAccessoryView.swift; path = NXKit/Classes/Foundation/NXKeyboardAccessoryView.swift; sourceTree = "<group>"; };
+		986BF7E1CC99CF043B214EF043788086 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9C9DCDD86918778B1192469FACF7F6C4 /* NXLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXLabel.swift; path = NXKit/Classes/Foundation/NXLabel.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F1118FB9DAAD6B708FE657110DAAAB4 /* NXKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NXKit.modulemap; sourceTree = "<group>"; };
+		A3C4821DB44E56DFD98035F6BC750F98 /* NXApplicationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXApplicationView.swift; path = NXKit/Classes/Foundation/NXApplicationView.swift; sourceTree = "<group>"; };
+		A806B27124CDA21FD8EBCC4A981865FE /* NXAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXAction.swift; path = NXKit/Classes/Foundation/NXAction.swift; sourceTree = "<group>"; };
+		A909E48D5BA156DFDAEDA76AF04433FC /* NXViewControllerAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXViewControllerAnimation.swift; path = NXKit/Classes/Foundation/NXViewControllerAnimation.swift; sourceTree = "<group>"; };
+		AA251C942F297CC8C4173A34917C9F2A /* NXPlaceholderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXPlaceholderView.swift; path = NXKit/Classes/Foundation/NXPlaceholderView.swift; sourceTree = "<group>"; };
+		AAD49FEAE7CE1CE7E0501B2B8BC9E805 /* NXLRView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXLRView.swift; path = NXKit/Classes/Foundation/NXLRView.swift; sourceTree = "<group>"; };
+		AC558453E8061151EA528C33F3C1C526 /* NXRuntime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXRuntime.swift; path = NXKit/Classes/Foundation/NXRuntime.swift; sourceTree = "<group>"; };
+		ADD6F2EA56A34AC0ADDC5A765B3CDF3F /* NXSwipeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXSwipeView.swift; path = NXKit/Classes/Foundation/NXSwipeView.swift; sourceTree = "<group>"; };
+		AE94205595E72956A11E697032511291 /* FlutterPluginRegistrant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlutterPluginRegistrant.release.xcconfig; sourceTree = "<group>"; };
+		AF2A6EF79933FC14944EDABD42DB05BF /* NXKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NXKit-dummy.m"; sourceTree = "<group>"; };
+		B134491F8252AEEBAF42969603E8C15E /* NXShadowView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXShadowView.swift; path = NXKit/Classes/Foundation/NXShadowView.swift; sourceTree = "<group>"; };
+		B3A674138DC94B33A8B6C1FC53A43B42 /* NXTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXTableViewCell.swift; path = NXKit/Classes/Foundation/NXTableViewCell.swift; sourceTree = "<group>"; };
+		B76A7DF9FA21095596499DC832E73BA1 /* NXApplicationViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXApplicationViewCell.swift; path = NXKit/Classes/Foundation/NXApplicationViewCell.swift; sourceTree = "<group>"; };
+		C05E8B444500212F5F8DD24B64FCB61D /* NXTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXTableView.swift; path = NXKit/Classes/Foundation/NXTableView.swift; sourceTree = "<group>"; };
+		C10767FA338C1BE5C7F7819C43E973A6 /* NXSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXSerialization.swift; path = NXKit/Classes/Foundation/NXSerialization.swift; sourceTree = "<group>"; };
+		C1597D1928800CE74F8E6F968AD04789 /* NXTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXTextView.swift; path = NXKit/Classes/Foundation/NXTextView.swift; sourceTree = "<group>"; };
+		C2D2818FC2F100F157AF569A8B77E4F7 /* Pods-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOS-dummy.m"; sourceTree = "<group>"; };
+		C4F1E1467BC7A533B99CF4DB4753769A /* flutter_module.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = flutter_module.podspec; path = ../../.ios/Flutter/flutter_module.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C5BA5E73F746881B4B45BD204BB517C0 /* FlutterPluginRegistrant-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlutterPluginRegistrant-prefix.pch"; sourceTree = "<group>"; };
+		C94404BC9C2B139B5D765D69E6EEB0F6 /* UIButton+NXKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+NXKit.swift"; path = "NXKit/Classes/Foundation/UIButton+NXKit.swift"; sourceTree = "<group>"; };
+		CA002F75A8B25BA9F96532689922AC42 /* NXItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXItem.swift; path = NXKit/Classes/Foundation/NXItem.swift; sourceTree = "<group>"; };
+		CD8FC6A6BB3A78CB94D38C2C9F59F866 /* Pods-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOS-Info.plist"; sourceTree = "<group>"; };
+		CDC692944537772DB54FA56AC8014084 /* NXView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXView.swift; path = NXKit/Classes/Foundation/NXView.swift; sourceTree = "<group>"; };
+		CF8CFAB81C1996CD596B9F187F289359 /* NXRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXRouter.swift; path = NXKit/Classes/Foundation/NXRouter.swift; sourceTree = "<group>"; };
+		D0E787C313EAB1BB8ADAC19973C5839A /* NXCView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXCView.swift; path = NXKit/Classes/Foundation/NXCView.swift; sourceTree = "<group>"; };
+		D16941B380A312764A7F6DBDAE2FB57A /* NXCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXCollectionViewController.swift; path = NXKit/Classes/Foundation/NXCollectionViewController.swift; sourceTree = "<group>"; };
+		D231E4EBA1AC620795FDB60830022E9F /* NXAssetClipViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXAssetClipViewController.swift; path = NXKit/Classes/Extensions/NXAssetClipViewController.swift; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D3104EDCD05DC793EC7A054E9AC99085 /* NXCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXCollectionView.swift; path = NXKit/Classes/Foundation/NXCollectionView.swift; sourceTree = "<group>"; };
+		D4FDEE24FB20F2F58448F187CA60B790 /* NXRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXRequest.swift; path = NXKit/Classes/Foundation/NXRequest.swift; sourceTree = "<group>"; };
+		D594854E82D40594997B94DC791E5FDF /* FlutterPluginRegistrant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlutterPluginRegistrant.debug.xcconfig; sourceTree = "<group>"; };
+		D690487A15201CB22E3E91701963D226 /* NX.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = NX.bundle; path = NXKit/Assets/NX.bundle; sourceTree = "<group>"; };
+		D978CECEE100E61B6CB0385387FD7C82 /* Pods-iOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-iOS"; path = Pods_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4A981B9D3E89A33CBE02EB79B08A17 /* NXImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXImageView.swift; path = NXKit/Classes/Foundation/NXImageView.swift; sourceTree = "<group>"; };
+		DA726EACAB1679022E4F6AC5AD983B8C /* UIImage+NXKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+NXKit.swift"; path = "NXKit/Classes/Foundation/UIImage+NXKit.swift"; sourceTree = "<group>"; };
+		DCDFDB1F3C3A45F0DE945EBD3B6A9DF7 /* NXActionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXActionView.swift; path = NXKit/Classes/Foundation/NXActionView.swift; sourceTree = "<group>"; };
+		DF7C6EBB9161EEF650EC12B4BB67E628 /* FlutterPluginRegistrant */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlutterPluginRegistrant; path = FlutterPluginRegistrant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E260414DB8CF952423BD85F1C43E6CF8 /* NXObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXObserver.swift; path = NXKit/Classes/Foundation/NXObserver.swift; sourceTree = "<group>"; };
+		E4A287AE307BB5A9B1DFB7386E20D162 /* Pods-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		E4DB95D93BCDCF46983E0C94E74F3FA3 /* FlutterPluginRegistrant-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlutterPluginRegistrant-Info.plist"; sourceTree = "<group>"; };
+		E63DF99DCD4379F20D3F2B193AA61FC9 /* NXKit-NXKit */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "NXKit-NXKit"; path = NXKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F27FB8CEC3D186F7BF6F553CDA2C2B /* NXToolViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXToolViewController.swift; path = NXKit/Classes/Foundation/NXToolViewController.swift; sourceTree = "<group>"; };
+		EA3EB7239015E9C5DA40FE8906B3EE87 /* NXTableReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXTableReusableView.swift; path = NXKit/Classes/Foundation/NXTableReusableView.swift; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		ED554EEE6D378E728FB7AF35C1096614 /* FlutterPluginRegistrant.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlutterPluginRegistrant.modulemap; sourceTree = "<group>"; };
+		F02000730C2777EA1CDFF96DBE7FF01B /* NX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NX.swift; path = NXKit/Classes/Foundation/NX.swift; sourceTree = "<group>"; };
+		F04ED1492737385F6DF9C0E15F8D0C0A /* NXAutoresizeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXAutoresizeView.swift; path = NXKit/Classes/Foundation/NXAutoresizeView.swift; sourceTree = "<group>"; };
+		F06451A87BC8BD8660B96E7CC43744A3 /* NXTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXTextField.swift; path = NXKit/Classes/Foundation/NXTextField.swift; sourceTree = "<group>"; };
+		F0C24ED2568C5A14908D2BB7269D1D32 /* Pods-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iOS.modulemap"; sourceTree = "<group>"; };
+		F29A60C3A7DD4F9F33CB7E11139354F6 /* NXControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXControl.swift; path = NXKit/Classes/Foundation/NXControl.swift; sourceTree = "<group>"; };
+		F459540AED62B0179D7D89E8F323F394 /* NXTableWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXTableWrapper.swift; path = NXKit/Classes/Foundation/NXTableWrapper.swift; sourceTree = "<group>"; };
+		F684F78D94F40CF1197BC2E2060B9D7C /* NXBackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXBackgroundView.swift; path = NXKit/Classes/Foundation/NXBackgroundView.swift; sourceTree = "<group>"; };
+		F844E075F4129E783DBC0D206E688190 /* Flutter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Flutter.podspec; path = ../../../.ios/Flutter/engine/Flutter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FC63FA543F182B63C96FCCD886BFAD3F /* NXString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXString.swift; path = NXKit/Classes/Foundation/NXString.swift; sourceTree = "<group>"; };
+		FD53FE8234CDBFB233D010907A9BFFEB /* NXAssetsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXAssetsViewController.swift; path = NXKit/Classes/Extensions/NXAssetsViewController.swift; sourceTree = "<group>"; };
+		FF5A02FD1BD2091C901B583389A8C879 /* NXTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NXTableViewController.swift; path = NXKit/Classes/Foundation/NXTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0711197A09145538F5EDB0FD9B3EA79F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0EEDB2DE0558D0B1A8C8F5CDD77D7C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15C5C9A0241FADC691DAA81AEDCFB5C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177813706C9F2025F9A004EF441F7E68 /* Foundation.framework in Frameworks */,
+				46197EAEF3CB14FDBAC29B14BD7207BB /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53FD11EC6BF50BE3EFF5F3769C11AA9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017C552FD0EAE110E1E769425D6F2F5F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E88D160703199CC99E227F9829D75609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19BF617EAC0FBDA3E8FDEDD85A024189 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C51F902D67F3ED5F92D394FE63CA3EA9 /* Pods-iOS */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		247D34E98AC541BD7531483542AF66D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF7C6EBB9161EEF650EC12B4BB67E628 /* FlutterPluginRegistrant */,
+				5F69386CF41B131FB792226AAC642EE0 /* NXKit */,
+				E63DF99DCD4379F20D3F2B193AA61FC9 /* NXKit-NXKit */,
+				D978CECEE100E61B6CB0385387FD7C82 /* Pods-iOS */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		286DD93915E84817D5F3C4CFC7D7C7FA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F1118FB9DAAD6B708FE657110DAAAB4 /* NXKit.modulemap */,
+				AF2A6EF79933FC14944EDABD42DB05BF /* NXKit-dummy.m */,
+				60DE6442B43CFDF15B1C56F245341CDA /* NXKit-Info.plist */,
+				6479181DA75A75E398F4213770F5BD28 /* NXKit-prefix.pch */,
+				527C88E7CCC13ECE7C32DE5A4381535D /* NXKit-umbrella.h */,
+				1B6C54E1C99FE28B8BE84E5519D548CE /* NXKit.debug.xcconfig */,
+				8D9920E2220AC7143AD1F433EAFAD668 /* NXKit.release.xcconfig */,
+				8F6B35AAED3AEE578B518885A8BCF5D4 /* ResourceBundle-NXKit-NXKit-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../../flutter-Apps/flutter-app/iOS/Pods/Target Support Files/NXKit";
+			sourceTree = "<group>";
+		};
+		2BA2588F2EA46EF336C30EE1C8C3D67E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43945211223AFB7B7D483BBF72CCE354 /* Flutter.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35E8ED48A98C528E5DF305CB8AE34B3F /* FlutterPluginRegistrant */ = {
+			isa = PBXGroup;
+			children = (
+				96F1E8EC2321F1870CDC1F5D1F8AD4B7 /* GeneratedPluginRegistrant.h */,
+				0ABF08606EE61A45D810E1BFBF6124B3 /* GeneratedPluginRegistrant.m */,
+				5B75582E107F8C86DDA48CF1D81BF15A /* Pod */,
+				60F6E924B852B10194A89DE4FF236600 /* Support Files */,
+			);
+			name = FlutterPluginRegistrant;
+			path = ../../../flutter_module/.iOS/Flutter/FlutterPluginRegistrant;
+			sourceTree = "<group>";
+		};
+		521C594E754F33B8A1A0005231C880CF /* NXKit */ = {
+			isa = PBXGroup;
+			children = (
+				E3FAC2D8C0B866DAB5E0AA720D5FAD75 /* Extensions */,
+				BD81D350353F191ED7BAF7F7C7F9DE47 /* Foundation */,
+				DC5ED93806536BF5E15EB499547D8FC0 /* Pod */,
+				286DD93915E84817D5F3C4CFC7D7C7FA /* Support Files */,
+			);
+			name = NXKit;
+			path = ../../../../dev/NXKit;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5B75582E107F8C86DDA48CF1D81BF15A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				25862E9BE019FB283CE4CFF3412407F5 /* FlutterPluginRegistrant.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		60F6E924B852B10194A89DE4FF236600 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED554EEE6D378E728FB7AF35C1096614 /* FlutterPluginRegistrant.modulemap */,
+				62E98221176004E8B7BE72385B21DA13 /* FlutterPluginRegistrant-dummy.m */,
+				E4DB95D93BCDCF46983E0C94E74F3FA3 /* FlutterPluginRegistrant-Info.plist */,
+				C5BA5E73F746881B4B45BD204BB517C0 /* FlutterPluginRegistrant-prefix.pch */,
+				4E40DF64CD08C0028DEFE019D9E6402E /* FlutterPluginRegistrant-umbrella.h */,
+				D594854E82D40594997B94DC791E5FDF /* FlutterPluginRegistrant.debug.xcconfig */,
+				AE94205595E72956A11E697032511291 /* FlutterPluginRegistrant.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../../../flutter-app/iOS/Pods/Target Support Files/FlutterPluginRegistrant";
+			sourceTree = "<group>";
+		};
+		6E777C9AF85F08B03DCB60CD64E88EB5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				32CD67DD8FAB164FE33568C3A49B9DD4 /* Flutter-xcframeworks.sh */,
+				4D9B1836266EF2C44E7B60CB592D40F4 /* Flutter.debug.xcconfig */,
+				2B7BDF442D2F168184C9E8D437D5CD1C /* Flutter.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../../../flutter-app/iOS/Pods/Target Support Files/Flutter";
+			sourceTree = "<group>";
+		};
+		81BF9536DA9FB294622D740D8A93D74C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F844E075F4129E783DBC0D206E688190 /* Flutter.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		841623611BF421C8B5E25EB4276CF5F5 /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				2BA2588F2EA46EF336C30EE1C8C3D67E /* Frameworks */,
+				81BF9536DA9FB294622D740D8A93D74C /* Pod */,
+				6E777C9AF85F08B03DCB60CD64E88EB5 /* Support Files */,
+			);
+			name = Flutter;
+			path = ../../../flutter_module/.iOS/Flutter/engine;
+			sourceTree = "<group>";
+		};
+		A771B9599EF8427AC3CD5100C276D87B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C4F1E1467BC7A533B99CF4DB4753769A /* flutter_module.podspec */,
+				5B61F92CC4F5C15B9CCB6D85B822D0D6 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		BD81D350353F191ED7BAF7F7C7F9DE47 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				161DF05B7742E75D854EABFCCBE15262 /* DispatchQueue+NXKit.swift */,
+				D690487A15201CB22E3E91701963D226 /* NX.bundle */,
+				F02000730C2777EA1CDFF96DBE7FF01B /* NX.swift */,
+				3A23ECA9CFD6B890BB5FBE0E3CDBEBED /* NX+.swift */,
+				A806B27124CDA21FD8EBCC4A981865FE /* NXAction.swift */,
+				DCDFDB1F3C3A45F0DE945EBD3B6A9DF7 /* NXActionView.swift */,
+				1C5A696E9D2D55D68FDCCF520D9F8756 /* NXAnimationView.swift */,
+				4444196E27E9F03017C0F0A1BA8974EE /* NXAny.swift */,
+				01E75959AD858240973260681645B226 /* NXAnylayerView.swift */,
+				A3C4821DB44E56DFD98035F6BC750F98 /* NXApplicationView.swift */,
+				B76A7DF9FA21095596499DC832E73BA1 /* NXApplicationViewCell.swift */,
+				5021BC3E52CFB5274C5E708DB1523801 /* NXArrayView.swift */,
+				F04ED1492737385F6DF9C0E15F8D0C0A /* NXAutoresizeView.swift */,
+				F684F78D94F40CF1197BC2E2060B9D7C /* NXBackgroundView.swift */,
+				07DBB1E13731D4BF6D9E907620B75A82 /* NXButton.swift */,
+				8B5D7558CE7DFBE7798ED9D338EF4C76 /* NXCollectionReusableView.swift */,
+				D3104EDCD05DC793EC7A054E9AC99085 /* NXCollectionView.swift */,
+				321E721FF195DA081C32A0D418F03445 /* NXCollectionViewCell.swift */,
+				D16941B380A312764A7F6DBDAE2FB57A /* NXCollectionViewController.swift */,
+				7D73168F5D774A5E8152554539AC7151 /* NXCollectionWrapper.swift */,
+				05541C5D58CDF1E034A9E8C92E382468 /* NXContainerController.swift */,
+				F29A60C3A7DD4F9F33CB7E11139354F6 /* NXControl.swift */,
+				D0E787C313EAB1BB8ADAC19973C5839A /* NXCView.swift */,
+				3831C893004F0D2EFFA888C66026107E /* NXFS.swift */,
+				4BC545DB3AAA7E5B5CC25C94A76F8CA5 /* NXHUD.swift */,
+				DA4A981B9D3E89A33CBE02EB79B08A17 /* NXImageView.swift */,
+				CA002F75A8B25BA9F96532689922AC42 /* NXItem.swift */,
+				972C27E982EBA280F2ACE83CE9BF4EB0 /* NXKeyboardAccessoryView.swift */,
+				4C0C3A3A887680FE5A7D15BCCFFC19C7 /* NXKVOObserver.swift */,
+				9C9DCDD86918778B1192469FACF7F6C4 /* NXLabel.swift */,
+				30D826AD67ABF8A0D0CF522B71B63CFB /* NXLCRView.swift */,
+				AAD49FEAE7CE1CE7E0501B2B8BC9E805 /* NXLRView.swift */,
+				1CB4897BF141D9F39F1969B0B84487D5 /* NXNavigationController.swift */,
+				58B503830022A72BF8234F13078E9221 /* NXNaviView.swift */,
+				E260414DB8CF952423BD85F1C43E6CF8 /* NXObserver.swift */,
+				050750FE7BDDA76B07B8669445D5A117 /* NXOverlay.swift */,
+				AA251C942F297CC8C4173A34917C9F2A /* NXPlaceholderView.swift */,
+				D4FDEE24FB20F2F58448F187CA60B790 /* NXRequest.swift */,
+				0B364B3F135578DC1F1590AD01627ADD /* NXResize.swift */,
+				CF8CFAB81C1996CD596B9F187F289359 /* NXRouter.swift */,
+				AC558453E8061151EA528C33F3C1C526 /* NXRuntime.swift */,
+				C10767FA338C1BE5C7F7819C43E973A6 /* NXSerialization.swift */,
+				B134491F8252AEEBAF42969603E8C15E /* NXShadowView.swift */,
+				4AC2D618B276368722193B8B336B4691 /* NXStorage.swift */,
+				FC63FA543F182B63C96FCCD886BFAD3F /* NXString.swift */,
+				547AD9B4DC98B2DEF6CD4049D247038F /* NXSuspendView.swift */,
+				ADD6F2EA56A34AC0ADDC5A765B3CDF3F /* NXSwipeView.swift */,
+				84668BCAB9A94904202583DFF047C032 /* NXSwipeViewController.swift */,
+				026A73BC6DEF7EF4EA754ABE217F6FAB /* NXSwitch.swift */,
+				EA3EB7239015E9C5DA40FE8906B3EE87 /* NXTableReusableView.swift */,
+				C05E8B444500212F5F8DD24B64FCB61D /* NXTableView.swift */,
+				B3A674138DC94B33A8B6C1FC53A43B42 /* NXTableViewCell.swift */,
+				FF5A02FD1BD2091C901B583389A8C879 /* NXTableViewController.swift */,
+				F459540AED62B0179D7D89E8F323F394 /* NXTableWrapper.swift */,
+				F06451A87BC8BD8660B96E7CC43744A3 /* NXTextField.swift */,
+				C1597D1928800CE74F8E6F968AD04789 /* NXTextView.swift */,
+				7520E9AD9DA43948153C271A14C5066B /* NXToolView.swift */,
+				E8F27FB8CEC3D186F7BF6F553CDA2C2B /* NXToolViewController.swift */,
+				6338C4EB7F5D54FC4965D76DC283286C /* NXTransitionView.swift */,
+				49A3ED93257C3FB6FC165F0B8BA1334B /* NXUI.swift */,
+				CDC692944537772DB54FA56AC8014084 /* NXView.swift */,
+				3EDEC130E7405A7E8670B5F8050464E7 /* NXViewAssociation.swift */,
+				12334EBBB4D1339EC63C4373E5CDCE0A /* NXViewController.swift */,
+				A909E48D5BA156DFDAEDA76AF04433FC /* NXViewControllerAnimation.swift */,
+				871CB6D3A65D24A670B2708514C9ABE9 /* NXViewControllerView.swift */,
+				7B80C5CFF018802BC4A2AC7294782F66 /* NXWebView.swift */,
+				573B3A7D877C16612EB3091624C7FF8E /* NXWebViewController.swift */,
+				34DD94379365FDD5938308D1B2F870A8 /* String+NXKit.swift */,
+				C94404BC9C2B139B5D765D69E6EEB0F6 /* UIButton+NXKit.swift */,
+				DA726EACAB1679022E4F6AC5AD983B8C /* UIImage+NXKit.swift */,
+				1B4A05E69112B97EF83E0772B78F5C22 /* UILabel+NXKit.swift */,
+				3C579998E4B54D8A1D5E55579662E39A /* UIView+NXKit.swift */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		BF7B9D321851F17198BEEEB794F23C9B /* flutter_module */ = {
+			isa = PBXGroup;
+			children = (
+				F62B71DB0024DE16BBD7FF83390A9617 /* Frameworks */,
+				A771B9599EF8427AC3CD5100C276D87B /* Pod */,
+				F479AD0C0CB54E14E1CFFBBCD7D4CD75 /* Support Files */,
+			);
+			name = flutter_module;
+			path = ../../../flutter_module/.iOS/Flutter;
+			sourceTree = "<group>";
+		};
+		C51F902D67F3ED5F92D394FE63CA3EA9 /* Pods-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F0C24ED2568C5A14908D2BB7269D1D32 /* Pods-iOS.modulemap */,
+				09A204268F4535CB5A6B08C05324615D /* Pods-iOS-acknowledgements.markdown */,
+				E4A287AE307BB5A9B1DFB7386E20D162 /* Pods-iOS-acknowledgements.plist */,
+				C2D2818FC2F100F157AF569A8B77E4F7 /* Pods-iOS-dummy.m */,
+				16BD169AA7D536D6860E10A04512C835 /* Pods-iOS-frameworks.sh */,
+				CD8FC6A6BB3A78CB94D38C2C9F59F866 /* Pods-iOS-Info.plist */,
+				896FFF0F9923E02F9FD8539E3B6E597A /* Pods-iOS-umbrella.h */,
+				179B703FDC155D582EA19CA4C60E3C0C /* Pods-iOS.debug.xcconfig */,
+				06587075D69E1E65069950D0F63F755A /* Pods-iOS.release.xcconfig */,
+			);
+			name = "Pods-iOS";
+			path = "Target Support Files/Pods-iOS";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				DF9E230D7C16CDBA303658BC769F5C2C /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				247D34E98AC541BD7531483542AF66D3 /* Products */,
+				19BF617EAC0FBDA3E8FDEDD85A024189 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DC5ED93806536BF5E15EB499547D8FC0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8CCC53ED50D447AB86709A017582D719 /* LICENSE */,
+				6E7E4BFCC2BC6524F79FE55041265E77 /* NXKit.podspec */,
+				986BF7E1CC99CF043B214EF043788086 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		DF9E230D7C16CDBA303658BC769F5C2C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				841623611BF421C8B5E25EB4276CF5F5 /* Flutter */,
+				BF7B9D321851F17198BEEEB794F23C9B /* flutter_module */,
+				35E8ED48A98C528E5DF305CB8AE34B3F /* FlutterPluginRegistrant */,
+				521C594E754F33B8A1A0005231C880CF /* NXKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		E3FAC2D8C0B866DAB5E0AA720D5FAD75 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3A77E9C536C6FF315EFEADF3652A520A /* NXAsset.swift */,
+				D231E4EBA1AC620795FDB60830022E9F /* NXAssetClipViewController.swift */,
+				FD53FE8234CDBFB233D010907A9BFFEB /* NXAssetsViewController.swift */,
+				262DCB951BAA457E44E61F448055E844 /* NXClipboardView.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F479AD0C0CB54E14E1CFFBBCD7D4CD75 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				39F56B0C17D4059F91A4884E0368ED5E /* flutter_module.debug.xcconfig */,
+				8673383BA585862502680D846E78376E /* flutter_module.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../../flutter-app/iOS/Pods/Target Support Files/flutter_module";
+			sourceTree = "<group>";
+		};
+		F62B71DB0024DE16BBD7FF83390A9617 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76CB43418F1A555BEE006D1D0507FE9F /* App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6FDD086955C3B91B8F9854E2D11D1B92 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EDE7B77EBF529C52163461D37129D48 /* NXKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3C28301085503206ED9F6CAF24DF1D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEC73351C0B723803DD91D7EA350078B /* Pods-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA459D0BD93513D5F24E7411C2A08C96 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D837330AA3A84258FE47D290F97FCC /* FlutterPluginRegistrant-umbrella.h in Headers */,
+				B139A6CF5147059A8E5C33B5D2ABEEDD /* GeneratedPluginRegistrant.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4E8176B9C15F8A61E959200B92017EE1 /* NXKit-NXKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A344E25A9CEF1DFF03ADB7FDC0A6D4C /* Build configuration list for PBXNativeTarget "NXKit-NXKit" */;
+			buildPhases = (
+				F83A0585FEA7A0033F7F212AF9485860 /* Sources */,
+				E88D160703199CC99E227F9829D75609 /* Frameworks */,
+				DA5652A846EE5335FD2F303607F3416C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NXKit-NXKit";
+			productName = NXKit;
+			productReference = E63DF99DCD4379F20D3F2B193AA61FC9 /* NXKit-NXKit */;
+			productType = "com.apple.product-type.bundle";
+		};
+		65356E389A75B118329D272175C636AA /* NXKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E72F9998A7B36FCA3FD95104D1B357D2 /* Build configuration list for PBXNativeTarget "NXKit" */;
+			buildPhases = (
+				6FDD086955C3B91B8F9854E2D11D1B92 /* Headers */,
+				BD8EE69914E164736F0676C7F422B090 /* Sources */,
+				15C5C9A0241FADC691DAA81AEDCFB5C8 /* Frameworks */,
+				59EE21874719B440F3524F76C9320F6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31EB4A55C9B1A1CB08C13EBA704F7F41 /* PBXTargetDependency */,
+			);
+			name = NXKit;
+			productName = NXKit;
+			productReference = 5F69386CF41B131FB792226AAC642EE0 /* NXKit */;
+			productType = "com.apple.product-type.framework";
+		};
+		83DAA8F43D74F8D51203DE23C7C3A3F5 /* FlutterPluginRegistrant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00470BE9A38CC7D755DFD45B84649A66 /* Build configuration list for PBXNativeTarget "FlutterPluginRegistrant" */;
+			buildPhases = (
+				FA459D0BD93513D5F24E7411C2A08C96 /* Headers */,
+				062029AE18594914186BF8410A0C6679 /* Sources */,
+				0711197A09145538F5EDB0FD9B3EA79F /* Frameworks */,
+				AC5425D4F4D4153C7FBD87B7C8C95626 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04005EC54449B6F593AAF7470BE3AF9B /* PBXTargetDependency */,
+			);
+			name = FlutterPluginRegistrant;
+			productName = FlutterPluginRegistrant;
+			productReference = DF7C6EBB9161EEF650EC12B4BB67E628 /* FlutterPluginRegistrant */;
+			productType = "com.apple.product-type.framework";
+		};
+		B46FA33BF30B86468D41063E70BFAA98 /* Pods-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 089B773DE14B43AD8D8A7DFC37E2194C /* Build configuration list for PBXNativeTarget "Pods-iOS" */;
+			buildPhases = (
+				B3C28301085503206ED9F6CAF24DF1D1 /* Headers */,
+				B8EB1C9700BF17E08D640C5DA787CD24 /* Sources */,
+				53FD11EC6BF50BE3EFF5F3769C11AA9A /* Frameworks */,
+				9C25D613D2E3DC1F74D0DED753855B74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC9478B45D2869F8CCE57A30CCC0DB5F /* PBXTargetDependency */,
+				A4080CB362DA3CD0172679A978CF1339 /* PBXTargetDependency */,
+				9A66FFDF49F31AA272D671EC73AA22E2 /* PBXTargetDependency */,
+				DCC0CDC386E7C8640BADDADB96F3AB56 /* PBXTargetDependency */,
+			);
+			name = "Pods-iOS";
+			productName = Pods_iOS;
+			productReference = D978CECEE100E61B6CB0385387FD7C82 /* Pods-iOS */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 247D34E98AC541BD7531483542AF66D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */,
+				13EA303BE4CA00A2ACBB221B4CC6120D /* flutter_module */,
+				83DAA8F43D74F8D51203DE23C7C3A3F5 /* FlutterPluginRegistrant */,
+				65356E389A75B118329D272175C636AA /* NXKit */,
+				4E8176B9C15F8A61E959200B92017EE1 /* NXKit-NXKit */,
+				B46FA33BF30B86468D41063E70BFAA98 /* Pods-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59EE21874719B440F3524F76C9320F6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC9005F1286B336D05428AA0F631DF89 /* NXKit-NXKit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C25D613D2E3DC1F74D0DED753855B74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5425D4F4D4153C7FBD87B7C8C95626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA5652A846EE5335FD2F303607F3416C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB0EED943E8281DBD7F7B2D0364F3ABF /* NX.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1942DC242E5E1329454EB610A4490AAB /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Flutter/Flutter-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Flutter/Flutter-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Flutter/Flutter-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		062029AE18594914186BF8410A0C6679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEEB61B1EF6CB43D93A55150E49DEFEC /* FlutterPluginRegistrant-dummy.m in Sources */,
+				A15E0AEDD6CB7AD0D26CC3F0E53A7F67 /* GeneratedPluginRegistrant.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8EB1C9700BF17E08D640C5DA787CD24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9FDDAC90D205AEAF85C495DA9954D9 /* Pods-iOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8EE69914E164736F0676C7F422B090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86DA52F44FDC314D77B3D50CA6E43F1A /* DispatchQueue+NXKit.swift in Sources */,
+				9F768C36256554365D76327D3A4B4309 /* NX.swift in Sources */,
+				33688F8F310DB34ECFAFEC9BE456D5DE /* NX+.swift in Sources */,
+				232D04722C1E12240359213F1EB70AE6 /* NXAction.swift in Sources */,
+				539BA0239FCDB858B4F46DD95192F79D /* NXActionView.swift in Sources */,
+				3D0FA8462DACE36174A0256714D1B3AB /* NXAnimationView.swift in Sources */,
+				9A5C9AD0C7EF1A8B6BD62BA3C6097325 /* NXAny.swift in Sources */,
+				C086A6BD565BAF678CAC09848E0454AF /* NXAnylayerView.swift in Sources */,
+				D4C8D428F2FDB504373A10072458BA85 /* NXApplicationView.swift in Sources */,
+				14C1316A0AC8C12363A4FCBA5867BFB4 /* NXApplicationViewCell.swift in Sources */,
+				CC7F323576949FAFE6B02FFB6B5E28D6 /* NXArrayView.swift in Sources */,
+				AD36E01241ED66EA388BFB150592EADD /* NXAsset.swift in Sources */,
+				20D0442CE6955D429A595225893E1015 /* NXAssetClipViewController.swift in Sources */,
+				E04141CB9EC8739FDFAB72497A764E45 /* NXAssetsViewController.swift in Sources */,
+				00972983F813E9AC8D75B45E656F6E06 /* NXAutoresizeView.swift in Sources */,
+				3934D166F75A7D722A193F09A724689C /* NXBackgroundView.swift in Sources */,
+				77BC3569E17A6B30DCB25089CBE4E5B1 /* NXButton.swift in Sources */,
+				53E43C0D96B45C6F8BCABAB0088B075B /* NXClipboardView.swift in Sources */,
+				7A71326D4D51961E016B9B1B76B60DC2 /* NXCollectionReusableView.swift in Sources */,
+				F67D2B0687AAE48F21836B5F163EDD70 /* NXCollectionView.swift in Sources */,
+				87B8B568CACFEEF133F4AB49CE825A9E /* NXCollectionViewCell.swift in Sources */,
+				ECA34B8BAE55614245952225403E62BD /* NXCollectionViewController.swift in Sources */,
+				A335E7C4B8218E5883AF644B79EA610A /* NXCollectionWrapper.swift in Sources */,
+				3042F0085ED19DD96504646E3057CED1 /* NXContainerController.swift in Sources */,
+				FC25A961A62181B395FB6A4045589293 /* NXControl.swift in Sources */,
+				36E6A32755C1E8F7F75234EF26D2E25E /* NXCView.swift in Sources */,
+				F799BE8FAF0C33E50340D7D358A2D4B6 /* NXFS.swift in Sources */,
+				E3750492C6D16BAE249FBF169BD905A7 /* NXHUD.swift in Sources */,
+				03BC3491994A2EA3150FF3A5B82BCA6A /* NXImageView.swift in Sources */,
+				7C58124A6D5E18569509F492244B91F8 /* NXItem.swift in Sources */,
+				00CF5BE69D2B6E1BF3B879762020978F /* NXKeyboardAccessoryView.swift in Sources */,
+				0E2D2A9E4A4651DBE6F6B766DC960552 /* NXKit-dummy.m in Sources */,
+				5F2EFDEB03919C5305496AECB08A7613 /* NXKVOObserver.swift in Sources */,
+				C650F4D7EED03C224A170284DF0B134B /* NXLabel.swift in Sources */,
+				094AC5CBFD75801B91331E74E8C42D40 /* NXLCRView.swift in Sources */,
+				533438362276AEDF4A05DE58364A0964 /* NXLRView.swift in Sources */,
+				1CE393605A5A855D0419053F861CCAF2 /* NXNavigationController.swift in Sources */,
+				B7491C241A12E24CCE876E22A16367B7 /* NXNaviView.swift in Sources */,
+				3EB1D15AB4106AD658832C55B24A4C27 /* NXObserver.swift in Sources */,
+				095530C1F482C3CB8297614170F62671 /* NXOverlay.swift in Sources */,
+				9DBDF0E4E75EC5E2A0FA846D57785045 /* NXPlaceholderView.swift in Sources */,
+				63D4D55C7779E05E5B4C360592822541 /* NXRequest.swift in Sources */,
+				BF1E70A97C3E9C290DD68EF8285F278E /* NXResize.swift in Sources */,
+				7F3F82F593F67F30C088E4D154977D25 /* NXRouter.swift in Sources */,
+				DD2BE0C1D2817B94E5CF1F21716B723D /* NXRuntime.swift in Sources */,
+				229F582D22C6D6AE0015ED83F8815E5B /* NXSerialization.swift in Sources */,
+				CCB7463178B75467A9470FB780097352 /* NXShadowView.swift in Sources */,
+				D3855BBD2C315F4F56CADA1DC8B451D8 /* NXStorage.swift in Sources */,
+				169161123FD4AE6DE87E99D179FFC0B2 /* NXString.swift in Sources */,
+				B748F30E0DBE2949DDBBD65DE2AB5E30 /* NXSuspendView.swift in Sources */,
+				5ED0D01BABFE05A89769043691855076 /* NXSwipeView.swift in Sources */,
+				6888DA4D7169948479EC1BB0567618FB /* NXSwipeViewController.swift in Sources */,
+				6A63029C0950C00CE30DCC101D95503F /* NXSwitch.swift in Sources */,
+				7C7E023885BE6177E0D98A83BF2973EB /* NXTableReusableView.swift in Sources */,
+				2881FC7EA3D0547801F25C1E20D65DE1 /* NXTableView.swift in Sources */,
+				C9712B153086748203B5823408730A3E /* NXTableViewCell.swift in Sources */,
+				464BDA3CA7CC2CAE1EFB3D8F1C51B20A /* NXTableViewController.swift in Sources */,
+				12588AF0AB85B7BDEDA05704E24B7780 /* NXTableWrapper.swift in Sources */,
+				80458E7FCA7ECDAAEF1A07059E2535A6 /* NXTextField.swift in Sources */,
+				DC136A1B32B71AEC374B76D89800434C /* NXTextView.swift in Sources */,
+				B5939257FF12EBD47EEC5C08B89F0EAB /* NXToolView.swift in Sources */,
+				40BE9B69ACBCF1CF52FE1B6946D708B4 /* NXToolViewController.swift in Sources */,
+				389D2E1106CF41702FB5EF27F4A9EC5D /* NXTransitionView.swift in Sources */,
+				E26FFECC7422D8CF49848E6A9B86FB64 /* NXUI.swift in Sources */,
+				3BE680F40DC0D4F5FF76D91A81823500 /* NXView.swift in Sources */,
+				612B5FC0DC4F7F000B3A1433A60D9780 /* NXViewAssociation.swift in Sources */,
+				C7F3E9F42191FB1E5625FEED890F7107 /* NXViewController.swift in Sources */,
+				EF6A01FF0CB9902BC698E025B034E6D2 /* NXViewControllerAnimation.swift in Sources */,
+				B0CE0DEC7E4DC4B69CCCA615593616B3 /* NXViewControllerView.swift in Sources */,
+				187FD1ECED176B7EE8FBD6A4DA090E91 /* NXWebView.swift in Sources */,
+				D9C89B71DFEF410BF343793C944A5AD0 /* NXWebViewController.swift in Sources */,
+				F4833DCC2F85C3423880AC9EA310317D /* String+NXKit.swift in Sources */,
+				725FD89A26E2EBBB79B81EAE0B64E698 /* UIButton+NXKit.swift in Sources */,
+				E072453A4A5170DE5635539A64F2F78D /* UIImage+NXKit.swift in Sources */,
+				D595CF4FF1DD25C3C9F27C6925C61F3F /* UILabel+NXKit.swift in Sources */,
+				2D06101B65265BD6508261A8A49BA852 /* UIView+NXKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F83A0585FEA7A0033F7F212AF9485860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04005EC54449B6F593AAF7470BE3AF9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Flutter;
+			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
+			targetProxy = 5105D8CFDDEC3D0626977C89FE9525E1 /* PBXContainerItemProxy */;
+		};
+		31EB4A55C9B1A1CB08C13EBA704F7F41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "NXKit-NXKit";
+			target = 4E8176B9C15F8A61E959200B92017EE1 /* NXKit-NXKit */;
+			targetProxy = B4D45CE70480480714076865867C4C86 /* PBXContainerItemProxy */;
+		};
+		9A66FFDF49F31AA272D671EC73AA22E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NXKit;
+			target = 65356E389A75B118329D272175C636AA /* NXKit */;
+			targetProxy = 7A1E95A94D88A422AA795E77D1E4799F /* PBXContainerItemProxy */;
+		};
+		A4080CB362DA3CD0172679A978CF1339 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlutterPluginRegistrant;
+			target = 83DAA8F43D74F8D51203DE23C7C3A3F5 /* FlutterPluginRegistrant */;
+			targetProxy = 2ACE97D46477017F5E5952D0FA01CFC5 /* PBXContainerItemProxy */;
+		};
+		DC9478B45D2869F8CCE57A30CCC0DB5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Flutter;
+			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
+			targetProxy = 0CBCB651009EAB8D5051337551A56B01 /* PBXContainerItemProxy */;
+		};
+		DCC0CDC386E7C8640BADDADB96F3AB56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = flutter_module;
+			target = 13EA303BE4CA00A2ACBB221B4CC6120D /* flutter_module */;
+			targetProxy = BF912F4DD9614928FF9DA035CFA9B2C8 /* PBXContainerItemProxy */;
+		};
+		F32A55668AB1AC49EE86D1EA62EC1C5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Flutter;
+			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
+			targetProxy = C3109B18B1E07D478E8103B8D35733A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02A8907359D82ADC12708329E7A5697E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE94205595E72956A11E697032511291 /* FlutterPluginRegistrant.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant.modulemap";
+				PRODUCT_MODULE_NAME = FlutterPluginRegistrant;
+				PRODUCT_NAME = FlutterPluginRegistrant;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1A7317B5454F861BCA85B5462562709C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B7BDF442D2F168184C9E8D437D5CD1C /* Flutter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EC254AF710D3DA171B50AC934512822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D594854E82D40594997B94DC791E5FDF /* FlutterPluginRegistrant.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant.modulemap";
+				PRODUCT_MODULE_NAME = FlutterPluginRegistrant;
+				PRODUCT_NAME = FlutterPluginRegistrant;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		305AB0EDFF1F4DA660E4A0284045393E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B6C54E1C99FE28B8BE84E5519D548CE /* NXKit.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/NXKit";
+				IBSC_MODULE = NXKit;
+				INFOPLIST_FILE = "Target Support Files/NXKit/ResourceBundle-NXKit-NXKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = NXKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3A8414744FEAE9F56988D7F52A502F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39F56B0C17D4059F91A4884E0368ED5E /* flutter_module.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E286F7AAE77404E3CFB845F6A6E51A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D9920E2220AC7143AD1F433EAFAD668 /* NXKit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NXKit/NXKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NXKit/NXKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NXKit/NXKit.modulemap";
+				PRODUCT_MODULE_NAME = NXKit;
+				PRODUCT_NAME = NXKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		58619E0FB1896D50C55E9B726D3D676A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06587075D69E1E65069950D0F63F755A /* Pods-iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOS/Pods-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOS/Pods-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9388E61EA1FF30316C4AE60A238DB6A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B6C54E1C99FE28B8BE84E5519D548CE /* NXKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NXKit/NXKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NXKit/NXKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NXKit/NXKit.modulemap";
+				PRODUCT_MODULE_NAME = NXKit;
+				PRODUCT_NAME = NXKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9B9B9706D9DF6E3129B708D9BAB8FFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8673383BA585862502680D846E78376E /* flutter_module.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A126C65B439D377622C81F4C15D47CBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D9920E2220AC7143AD1F433EAFAD668 /* NXKit.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/NXKit";
+				IBSC_MODULE = NXKit;
+				INFOPLIST_FILE = "Target Support Files/NXKit/ResourceBundle-NXKit-NXKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = NXKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		A3FCEAB9E3023647E0B28F3D75E4D99B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 179B703FDC155D582EA19CA4C60E3C0C /* Pods-iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOS/Pods-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOS/Pods-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E9A8F90AC4F820E13D090CCDBD703E6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D9B1836266EF2C44E7B60CB592D40F4 /* Flutter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00470BE9A38CC7D755DFD45B84649A66 /* Build configuration list for PBXNativeTarget "FlutterPluginRegistrant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EC254AF710D3DA171B50AC934512822 /* Debug */,
+				02A8907359D82ADC12708329E7A5697E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		089B773DE14B43AD8D8A7DFC37E2194C /* Build configuration list for PBXNativeTarget "Pods-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FCEAB9E3023647E0B28F3D75E4D99B /* Debug */,
+				58619E0FB1896D50C55E9B726D3D676A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A344E25A9CEF1DFF03ADB7FDC0A6D4C /* Build configuration list for PBXNativeTarget "NXKit-NXKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305AB0EDFF1F4DA660E4A0284045393E /* Debug */,
+				A126C65B439D377622C81F4C15D47CBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6164B05B5EAB7A16188BE69BCC9EBC7E /* Build configuration list for PBXAggregateTarget "Flutter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9A8F90AC4F820E13D090CCDBD703E6B /* Debug */,
+				1A7317B5454F861BCA85B5462562709C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2B9BDCCE32AA674DD5C92CAAAAF2BBA /* Build configuration list for PBXAggregateTarget "flutter_module" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8414744FEAE9F56988D7F52A502F51 /* Debug */,
+				9B9B9706D9DF6E3129B708D9BAB8FFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E72F9998A7B36FCA3FD95104D1B357D2 /* Build configuration list for PBXNativeTarget "NXKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9388E61EA1FF30316C4AE60A238DB6A3 /* Debug */,
+				4E286F7AAE77404E3CFB845F6A6E51A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
