@@ -1,9 +1,9 @@
 # Uncomment the next line to define a global platform for your project
 
 flutter_application_path = "../module"
-load File.join(flutter_application_path, ".iOS", "Flutter", "podhelper.rb")
+load File.join(flutter_application_path, ".ios", "Flutter", "podhelper.rb")
 
-platform :ios, '9.0'
+platform :ios, '14.0'
 
 
 target 'iOS' do
@@ -12,7 +12,26 @@ target 'iOS' do
   
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+end
 
-  # Pods for iOS
-  pod 'NXKit', :path => "../../../dev/NXKit"
+post_install do |installer|
+  
+  # 兼容Apple Silicon arm芯片 (flutter >= 3.1.0)
+  flutter_post_install(installer) if defined?(flutter_post_install)
+  
+  # DT_TOOLCHAIN_DIR cannot be used to evaluate LIBRARY_SEARCH_PATHS, use TOOLCHAIN_DIR instead.
+  installer.aggregate_targets.each do |target|
+    target.xcconfigs.each do |variant, xcconfig|
+      xcconfig_path = target.client_root + target.xcconfig_relative_path(variant)
+      IO.write(xcconfig_path, IO.read(xcconfig_path).gsub("DT_TOOLCHAIN_DIR", "TOOLCHAIN_DIR"))
+    end
+  end
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      if config.base_configuration_reference.is_a? Xcodeproj::Project::Object::PBXFileReference
+        xcconfig_path = config.base_configuration_reference.real_path
+        IO.write(xcconfig_path, IO.read(xcconfig_path).gsub("DT_TOOLCHAIN_DIR", "TOOLCHAIN_DIR"))
+      end
+    end
+  end
 end

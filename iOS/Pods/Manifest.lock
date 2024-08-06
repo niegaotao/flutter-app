@@ -2,37 +2,21 @@ PODS:
   - Flutter (1.0.0)
   - FlutterPluginRegistrant (0.0.1):
     - Flutter
-  - module (0.0.1):
-    - Flutter
-  - NXKit (0.9.9):
-    - NXKit/Extensions (= 0.9.9)
-    - NXKit/Foundation (= 0.9.9)
-  - NXKit/Extensions (0.9.9):
-    - NXKit/Foundation
-  - NXKit/Foundation (0.9.9)
 
 DEPENDENCIES:
-  - Flutter (from `../module/.iOS/Flutter/engine`)
-  - FlutterPluginRegistrant (from `../module/.iOS/Flutter/FlutterPluginRegistrant`)
-  - module (from `../module/.iOS/Flutter`)
-  - NXKit (from `../../../dev/NXKit`)
+  - Flutter (from `../module/.ios/Flutter`)
+  - FlutterPluginRegistrant (from `../module/.ios/Flutter/FlutterPluginRegistrant`)
 
 EXTERNAL SOURCES:
   Flutter:
-    :path: "../module/.iOS/Flutter/engine"
+    :path: "../module/.ios/Flutter"
   FlutterPluginRegistrant:
-    :path: "../module/.iOS/Flutter/FlutterPluginRegistrant"
-  module:
-    :path: "../module/.iOS/Flutter"
-  NXKit:
-    :path: "../../../dev/NXKit"
+    :path: "../module/.ios/Flutter/FlutterPluginRegistrant"
 
 SPEC CHECKSUMS:
-  Flutter: bdfa2e8fe0e2880a2c6a58a0b1a8675c262a07af
-  FlutterPluginRegistrant: 2afd5ea46d3a949472c9b7da6462d8fbf7d8b16e
-  module: f2e72eb977d4e71e6db6f67498f808ffb7458901
-  NXKit: 728d4e632de8595a9ef2e65515fe85b174924142
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  FlutterPluginRegistrant: 0b732256b4829f9783c18c68e2f9adacc1536955
 
-PODFILE CHECKSUM: c64309770edbb3a93ef794bf6f168830349186c7
+PODFILE CHECKSUM: 621f616e16802510787a5f4659fc3131fb9e9170
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.12.1

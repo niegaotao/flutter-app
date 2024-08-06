@@ -13,6 +13,9 @@
 		C96CFB7127BF44100073417F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96CFB6F27BF44100073417F /* Main.storyboard */; };
 		C96CFB7327BF44140073417F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96CFB7227BF44140073417F /* Assets.xcassets */; };
 		C96CFB7627BF44140073417F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96CFB7427BF44140073417F /* LaunchScreen.storyboard */; };
+		C9953BBF2C6212CE00385A03 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9953BBE2C6212CE00385A03 /* App.swift */; };
+		C9953BC12C62148B00385A03 /* EXFlutterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9953BC02C62148B00385A03 /* EXFlutterViewController.swift */; };
+		C9953BC32C62163900385A03 /* EXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9953BC22C62163900385A03 /* EXViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		C96CFB7227BF44140073417F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C96CFB7527BF44140073417F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C96CFB7727BF44140073417F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9953BBE2C6212CE00385A03 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		C9953BC02C62148B00385A03 /* EXFlutterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXFlutterViewController.swift; sourceTree = "<group>"; };
+		C9953BC22C62163900385A03 /* EXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXViewController.swift; sourceTree = "<group>"; };
 		DAC1030E5E01DE4BC993DF9A /* Pods-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.debug.xcconfig"; path = "Target Support Files/Pods-iOS/Pods-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		FC48A2529F5CB928C781224E /* Pods-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.release.xcconfig"; path = "Target Support Files/Pods-iOS/Pods-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,12 +84,15 @@
 		C96CFB6827BF44100073417F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C9953BBE2C6212CE00385A03 /* App.swift */,
 				C96CFB6927BF44100073417F /* AppDelegate.swift */,
-				C96CFB6D27BF44100073417F /* EXAppViewController.swift */,
-				C96CFB6F27BF44100073417F /* Main.storyboard */,
 				C96CFB7227BF44140073417F /* Assets.xcassets */,
-				C96CFB7427BF44140073417F /* LaunchScreen.storyboard */,
+				C96CFB6D27BF44100073417F /* EXAppViewController.swift */,
+				C9953BC02C62148B00385A03 /* EXFlutterViewController.swift */,
+				C9953BC22C62163900385A03 /* EXViewController.swift */,
 				C96CFB7727BF44140073417F /* Info.plist */,
+				C96CFB7427BF44140073417F /* LaunchScreen.storyboard */,
+				C96CFB6F27BF44100073417F /* Main.storyboard */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -100,7 +109,7 @@
 				C96CFB6227BF44100073417F /* Sources */,
 				C96CFB6327BF44100073417F /* Frameworks */,
 				C96CFB6427BF44100073417F /* Resources */,
-				54EA741EC7016DC8EFE23B7C /* [CP] Embed Pods Frameworks */,
+				6474F5A51382D54D65AA41E1 /* [CP-User] Embed Flutter Build module Script */,
 			);
 			buildRules = (
 			);
@@ -158,22 +167,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		54EA741EC7016DC8EFE23B7C /* [CP] Embed Pods Frameworks */ = {
+		6474F5A51382D54D65AA41E1 /* [CP-User] Embed Flutter Build module Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOS/Pods-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOS/Pods-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
+			name = "[CP-User] Embed Flutter Build module Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS/Pods-iOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
 		};
 		77AAEAD73C394DF5A22A1D87 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -205,7 +207,7 @@
 			name = "[CP-User] Run Flutter Build module Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../module/.iOS/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -214,7 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9953BBF2C6212CE00385A03 /* App.swift in Sources */,
+				C9953BC32C62163900385A03 /* EXViewController.swift in Sources */,
 				C96CFB6E27BF44100073417F /* EXAppViewController.swift in Sources */,
+				C9953BC12C62148B00385A03 /* EXFlutterViewController.swift in Sources */,
 				C96CFB6A27BF44100073417F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
